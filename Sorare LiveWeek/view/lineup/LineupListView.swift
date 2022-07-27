@@ -41,6 +41,5 @@ struct LineupListView: View {
 struct LineupListView_Previews: PreviewProvider {
     static var previews: some View {
         LineupListView(gameWeeks: [GameWeek.generateGameWeekExample(num: 1),GameWeek.generateGameWeekExample(num: 2)])
-            .previewInterfaceOrientation(.portraitUpsideDown)
     }
 }
