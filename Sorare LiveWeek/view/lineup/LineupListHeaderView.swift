@@ -57,7 +57,7 @@ struct LineupListHeaderView: View {
     
     // MARK: Private methods
     
-    // Returns the week range to display.
+    // Returns the week range.
     private func weekRange(gameWeek:GameWeek) ->String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
@@ -73,7 +73,7 @@ struct LineupListHeaderView: View {
         return "\(startDateString) - \(endDateString)"
     }
     
-    // Returns the week title to display.
+    // Returns the week title.
     private func WeekTitle(gameWeekIndex:Int) -> String {
         return gameWeekIndex == 0 ? "LIVE WEEK" : "NEXT WEEK"
     }

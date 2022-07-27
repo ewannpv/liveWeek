@@ -26,9 +26,7 @@ struct LineupCardView: View {
                 Divider()
                     .padding(.horizontal, kCardPadding)
                 HStack {
-                    Text(lineupRank(rank:lineup.ranking))
-                        .font(.headline)
-                        .bold()
+                    lineupRank()
                     Spacer()
                     Text(lineupScore(score: lineup.score))
                 }.padding(.all, kCardPadding)
@@ -50,12 +48,17 @@ struct LineupCardView: View {
     
     // MARK: Private methods
     
-    // Returns the formated lineup rank to display.
-    private func lineupRank(rank: Int) -> String {
-        return "\(rank)TH"
+    // Returns the formated lineup rank for the given 'lineup'.
+    private func lineupRank() -> some View {
+        HStack {
+            Text("\(lineup.ranking)TH")
+                .font(.headline)
+                .bold()
+            Text("/ \(lineup.lineupsCount)")
+                .font(.footnote)
+        }
     }
-    
-    // Returns the lineup score to display.
+    // Returns the lineup score.
     private func lineupScore(score: Double) -> String {
         return "\(Int(lineup.score))pts"
     }
