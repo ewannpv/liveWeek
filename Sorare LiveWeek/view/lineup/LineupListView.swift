@@ -24,10 +24,8 @@ struct LineupListView: View {
                         }
                         .padding()
                         .listStyle(.plain)
-                        
                     }
                     .edgesIgnoringSafeArea(.bottom)
-
                 }
             }
         }
@@ -37,7 +35,7 @@ struct LineupListView: View {
         .background(.black)
         
     }
-
+    
 }
 
 struct LineupListView_Previews: PreviewProvider {
