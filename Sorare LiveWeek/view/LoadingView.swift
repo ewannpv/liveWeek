@@ -9,15 +9,14 @@ import SwiftUI
 
 // View displayed while fetching data.
 struct LoadingView: View {
-    
-    
+
     // Images.
     let kImageLoading : String = "icloud.fill"
-    
     
     var body: some View {
         Image(systemName: kImageLoading)
     }
+
 }
 
 struct LoadingView_Previews: PreviewProvider {

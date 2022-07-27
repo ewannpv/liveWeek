@@ -14,6 +14,7 @@ struct ErrorView: View {
     var body: some View {
         Text(errorMessage)
     }
+
 }
 
 struct ErrorView_Previews: PreviewProvider {

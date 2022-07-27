@@ -20,6 +20,7 @@ struct ContentView: View {
             LineupListView(gameWeeks: gameWeekFetcher.gameWeeks)
         }
     }
+
 }
 
 struct ContentView_Previews: PreviewProvider {

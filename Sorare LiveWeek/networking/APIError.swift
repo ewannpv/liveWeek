@@ -26,4 +26,5 @@ enum APIError: Error {
             return error?.localizedDescription ?? "Something went wrong."
         }
     }
+
 }

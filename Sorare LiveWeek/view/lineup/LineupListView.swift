@@ -22,16 +22,19 @@ struct LineupListView: View {
                                 LineupCardView(lineup: lineup)
                             }
                         }
+                        .padding()
                         .listStyle(.plain)
+                        
                     }
+                    .edgesIgnoringSafeArea(.bottom)
+
                 }
             }
         }
         .tabViewStyle(.page(indexDisplayMode: .always))
         .indexViewStyle(.page(backgroundDisplayMode: .always))
-        .ignoresSafeArea()
+        .edgesIgnoringSafeArea(.bottom)
         .background(.black)
-        .background(.gray)
         
     }
 
@@ -40,5 +43,6 @@ struct LineupListView: View {
 struct LineupListView_Previews: PreviewProvider {
     static var previews: some View {
         LineupListView(gameWeeks: [GameWeek.generateGameWeekExample(num: 1),GameWeek.generateGameWeekExample(num: 2)])
+            .previewInterfaceOrientation(.portraitUpsideDown)
     }
 }
