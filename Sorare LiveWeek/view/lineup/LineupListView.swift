@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// TableView that contains a list of lineup for the each 'gameWeeks'.
 struct LineupListView: View {
     let gameWeeks: [GameWeek]
     
@@ -24,17 +25,16 @@ struct LineupListView: View {
                         .listStyle(.plain)
                     }
                 }
-                
             }
         }
         .tabViewStyle(.page(indexDisplayMode: .always))
         .indexViewStyle(.page(backgroundDisplayMode: .always))
         .ignoresSafeArea()
         .background(.black)
-        
         .background(.gray)
         
     }
+
 }
 
 struct LineupListView_Previews: PreviewProvider {

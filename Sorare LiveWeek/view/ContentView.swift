@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Primary view.
 struct ContentView: View {
     @StateObject var gameWeekFetcher = GameWeekFetcher()
     

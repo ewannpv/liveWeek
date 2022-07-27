@@ -7,14 +7,18 @@
 
 import SwiftUI
 
-struct ButtonModifier: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct ButtonModifier: ViewModifier {
+    
+    // Constraints.
+    let kButtonPadding: CGFloat = 5
+    
+    func body(content: Content) -> some View {
+        content
+            .padding(kButtonPadding)
+            .background(Color.gray.opacity(0.4))
+            .clipShape(Circle())
+        
     }
+    
 }
 
-struct ButtonModifier_Previews: PreviewProvider {
-    static var previews: some View {
-        ButtonModifier()
-    }
-}

@@ -14,6 +14,21 @@
 		CBC023E0288F210100543522 /* Sorare_LiveWeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC023DF288F210100543522 /* Sorare_LiveWeekTests.swift */; };
 		CBC023EA288F210100543522 /* Sorare_LiveWeekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC023E9288F210100543522 /* Sorare_LiveWeekUITests.swift */; };
 		CBC023EC288F210100543522 /* Sorare_LiveWeekUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC023EB288F210100543522 /* Sorare_LiveWeekUITestsLaunchTests.swift */; };
+		CBC02416288F22E800543522 /* GameWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC02415288F22E800543522 /* GameWeek.swift */; };
+		CBC02418288F23E900543522 /* Lineup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC02417288F23E900543522 /* Lineup.swift */; };
+		CBC0241A288F249900543522 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC02419288F249900543522 /* Player.swift */; };
+		CBC02420288F3BBE00543522 /* GameWeekFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC0241F288F3BBE00543522 /* GameWeekFetcher.swift */; };
+		CBC02427288F402C00543522 /* LineupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC02426288F402C00543522 /* LineupListView.swift */; };
+		CBC02429288F403500543522 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC02428288F403500543522 /* LoadingView.swift */; };
+		CBC0242B288F407200543522 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC0242A288F407200543522 /* ErrorView.swift */; };
+		CBDBE5622891478100409FA4 /* LineupListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDBE5612891478100409FA4 /* LineupListHeaderView.swift */; };
+		CBDBE56428914B5C00409FA4 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDBE56328914B5C00409FA4 /* ButtonModifier.swift */; };
+		CBF7992E2890474400FED6F4 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7992D2890474400FED6F4 /* APIError.swift */; };
+		CBF799302890487300FED6F4 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7992F2890487300FED6F4 /* APIService.swift */; };
+		CBF7993228904A8300FED6F4 /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7993128904A8300FED6F4 /* APIServiceProtocol.swift */; };
+		CBF799342890544000FED6F4 /* LineupCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF799332890544000FED6F4 /* LineupCardView.swift */; };
+		CBF7993628905AE000FED6F4 /* LineupPlayerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7993528905AE000FED6F4 /* LineupPlayerRowView.swift */; };
+		CBF79939289091F400FED6F4 /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF79938289091F400FED6F4 /* CardModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +59,21 @@
 		CBC023E5288F210100543522 /* Sorare LiveWeekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sorare LiveWeekUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC023E9288F210100543522 /* Sorare_LiveWeekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorare_LiveWeekUITests.swift; sourceTree = "<group>"; };
 		CBC023EB288F210100543522 /* Sorare_LiveWeekUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorare_LiveWeekUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CBC02415288F22E800543522 /* GameWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWeek.swift; sourceTree = "<group>"; };
+		CBC02417288F23E900543522 /* Lineup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lineup.swift; sourceTree = "<group>"; };
+		CBC02419288F249900543522 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		CBC0241F288F3BBE00543522 /* GameWeekFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWeekFetcher.swift; sourceTree = "<group>"; };
+		CBC02426288F402C00543522 /* LineupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupListView.swift; sourceTree = "<group>"; };
+		CBC02428288F403500543522 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CBC0242A288F407200543522 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		CBDBE5612891478100409FA4 /* LineupListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupListHeaderView.swift; sourceTree = "<group>"; };
+		CBDBE56328914B5C00409FA4 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		CBF7992D2890474400FED6F4 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		CBF7992F2890487300FED6F4 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		CBF7993128904A8300FED6F4 /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
+		CBF799332890544000FED6F4 /* LineupCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupCardView.swift; sourceTree = "<group>"; };
+		CBF7993528905AE000FED6F4 /* LineupPlayerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupPlayerRowView.swift; sourceTree = "<group>"; };
+		CBF79938289091F400FED6F4 /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +124,10 @@
 		CBC023CD288F210100543522 /* Sorare LiveWeek */ = {
 			isa = PBXGroup;
 			children = (
+				CBC02421288F3EF200543522 /* view */,
+				CBC0241C288F275300543522 /* networking */,
+				CBC023F8288F220500543522 /* model */,
 				CBC023CE288F210100543522 /* Sorare_LiveWeekApp.swift */,
-				CBC023D0288F210100543522 /* ContentView.swift */,
 				CBC023D2288F210100543522 /* Assets.xcassets */,
 				CBC023D4288F210100543522 /* Preview Content */,
 			);
@@ -125,6 +157,59 @@
 				CBC023EB288F210100543522 /* Sorare_LiveWeekUITestsLaunchTests.swift */,
 			);
 			path = "Sorare LiveWeekUITests";
+			sourceTree = "<group>";
+		};
+		CBC023F8288F220500543522 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CBC02415288F22E800543522 /* GameWeek.swift */,
+				CBC02417288F23E900543522 /* Lineup.swift */,
+				CBC02419288F249900543522 /* Player.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CBC0241C288F275300543522 /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				CBC0241F288F3BBE00543522 /* GameWeekFetcher.swift */,
+				CBF7992D2890474400FED6F4 /* APIError.swift */,
+				CBF7992F2890487300FED6F4 /* APIService.swift */,
+				CBF7993128904A8300FED6F4 /* APIServiceProtocol.swift */,
+			);
+			path = networking;
+			sourceTree = "<group>";
+		};
+		CBC02421288F3EF200543522 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CBDBE56528914F7C00409FA4 /* lineup */,
+				CBF79937289091D800FED6F4 /* modifier */,
+				CBC02428288F403500543522 /* LoadingView.swift */,
+				CBC0242A288F407200543522 /* ErrorView.swift */,
+				CBC023D0288F210100543522 /* ContentView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		CBDBE56528914F7C00409FA4 /* lineup */ = {
+			isa = PBXGroup;
+			children = (
+				CBC02426288F402C00543522 /* LineupListView.swift */,
+				CBDBE5612891478100409FA4 /* LineupListHeaderView.swift */,
+				CBF799332890544000FED6F4 /* LineupCardView.swift */,
+				CBF7993528905AE000FED6F4 /* LineupPlayerRowView.swift */,
+			);
+			path = lineup;
+			sourceTree = "<group>";
+		};
+		CBF79937289091D800FED6F4 /* modifier */ = {
+			isa = PBXGroup;
+			children = (
+				CBF79938289091F400FED6F4 /* CardModifier.swift */,
+				CBDBE56328914B5C00409FA4 /* ButtonModifier.swift */,
+			);
+			path = modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +342,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF7993228904A8300FED6F4 /* APIServiceProtocol.swift in Sources */,
+				CBC02418288F23E900543522 /* Lineup.swift in Sources */,
+				CBDBE5622891478100409FA4 /* LineupListHeaderView.swift in Sources */,
 				CBC023D1288F210100543522 /* ContentView.swift in Sources */,
 				CBC023CF288F210100543522 /* Sorare_LiveWeekApp.swift in Sources */,
+				CBF7992E2890474400FED6F4 /* APIError.swift in Sources */,
+				CBF799302890487300FED6F4 /* APIService.swift in Sources */,
+				CBF7993628905AE000FED6F4 /* LineupPlayerRowView.swift in Sources */,
+				CBC0241A288F249900543522 /* Player.swift in Sources */,
+				CBF799342890544000FED6F4 /* LineupCardView.swift in Sources */,
+				CBC02420288F3BBE00543522 /* GameWeekFetcher.swift in Sources */,
+				CBC02429288F403500543522 /* LoadingView.swift in Sources */,
+				CBF79939289091F400FED6F4 /* CardModifier.swift in Sources */,
+				CBC02416288F22E800543522 /* GameWeek.swift in Sources */,
+				CBDBE56428914B5C00409FA4 /* ButtonModifier.swift in Sources */,
+				CBC0242B288F407200543522 /* ErrorView.swift in Sources */,
+				CBC02427288F402C00543522 /* LineupListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,9 +514,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sorare LiveWeek/Preview Content\"";
+				DEVELOPMENT_TEAM = 3YHTN729J5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -429,8 +531,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ewannpv.Sorare-LiveWeek";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ewannpv.Sorare-LiveWeek";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -442,9 +545,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sorare LiveWeek/Preview Content\"";
+				DEVELOPMENT_TEAM = 3YHTN729J5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -457,8 +562,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ewannpv.Sorare-LiveWeek";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ewannpv.Sorare-LiveWeek";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -547,7 +653,7 @@
 				CBC023EE288F210100543522 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		CBC023EF288F210100543522 /* Build configuration list for PBXNativeTarget "Sorare LiveWeek" */ = {
 			isa = XCConfigurationList;
@@ -556,7 +662,7 @@
 				CBC023F1288F210100543522 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		CBC023F2288F210100543522 /* Build configuration list for PBXNativeTarget "Sorare LiveWeekTests" */ = {
 			isa = XCConfigurationList;
@@ -565,7 +671,7 @@
 				CBC023F4288F210100543522 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		CBC023F5288F210100543522 /* Build configuration list for PBXNativeTarget "Sorare LiveWeekUITests" */ = {
 			isa = XCConfigurationList;
@@ -574,7 +680,7 @@
 				CBC023F7288F210100543522 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

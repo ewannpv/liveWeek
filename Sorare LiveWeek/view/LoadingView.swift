@@ -7,9 +7,16 @@
 
 import SwiftUI
 
+// View displayed while fetching data.
 struct LoadingView: View {
+    
+    
+    // Images.
+    let kImageLoading : String = "icloud.fill"
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image(systemName: kImageLoading)
     }
 }
 

@@ -7,9 +7,18 @@
 
 import SwiftUI
 
+// Header section of the LineupListView.
 struct LineupListHeaderView: View {
     var gameWeekIndex: Int
     var gameWeek: GameWeek
+    
+    // Constraints.
+    let kHorizontalButtonPadding : CGFloat = 20
+    let kTopButtonPadding : CGFloat = 10
+    
+    // Images.
+    let kSettingsImage : String = "gearshape.fill"
+    let kNotificationsImage : String = "bell.fill"
     
     var body: some View {
         VStack(spacing:0) {
@@ -17,22 +26,22 @@ struct LineupListHeaderView: View {
                 Button {
                     print("Settings button was tapped")
                 } label: {
-                    Image(systemName: "gearshape.fill")
+                    Image(systemName: kSettingsImage)
                 }
                 .modifier(ButtonModifier())
                 Spacer()
                 Button {
                     print("Notifications button was tapped")
                 } label: {
-                    Image(systemName: "bell.fill")
+                    Image(systemName: kNotificationsImage)
                 }
                 .modifier(ButtonModifier())
-
+                
             }
-            .padding(.horizontal, 20)
-            .padding(.top, 10)
+            .padding(.horizontal, kHorizontalButtonPadding)
+            .padding(.top, kTopButtonPadding)
             .foregroundColor(.white)
-
+            
             VStack {
                 Text(WeekTitle(gameWeekIndex: gameWeekIndex))
                     .font(.largeTitle)
@@ -46,6 +55,9 @@ struct LineupListHeaderView: View {
         }
     }
     
+    // MARK: Private methods
+    
+    // Returns the week range to display.
     private func weekRange(gameWeek:GameWeek) ->String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
@@ -61,9 +73,11 @@ struct LineupListHeaderView: View {
         return "\(startDateString) - \(endDateString)"
     }
     
+    // Returns the week title to display.
     private func WeekTitle(gameWeekIndex:Int) -> String {
         return gameWeekIndex == 0 ? "LIVE WEEK" : "NEXT WEEK"
     }
+    
 }
 
 struct LineupListHeaderView_Previews: PreviewProvider {

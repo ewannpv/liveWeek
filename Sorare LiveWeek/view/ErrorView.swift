@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// View displayed when an error occurred while fetching data.
 struct ErrorView: View {
     var errorMessage: String
 

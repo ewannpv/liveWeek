@@ -7,8 +7,12 @@
 
 import SwiftUI
 
+// View that contains a list of player from the given 'lineup'.
 struct LineupCardView: View {
     let lineup: Lineup
+    
+    // Constraints.
+    let kCardPadding: CGFloat = 10
     
     var body: some View {
         
@@ -18,19 +22,19 @@ struct LineupCardView: View {
                     Text(lineup.leagueName).font(.bold(.title2)())
                     Spacer()
                     Text("Limited")
-                }.padding(.all, 10)
+                }.padding(.all, kCardPadding)
                 Divider()
-                    .padding(.horizontal, 10)
+                    .padding(.horizontal, kCardPadding)
                 HStack {
                     Text(lineupRank(rank:lineup.ranking))
                         .font(.headline)
                         .bold()
                     Spacer()
                     Text(lineupScore(score: lineup.score))
-                }.padding(.all, 10)
+                }.padding(.all, kCardPadding)
             }
             .foregroundColor(.white)
-            .padding(.vertical, 10)
+            .padding(.vertical, kCardPadding)
             
             VStack {
                 ForEach(lineup.players) { player in
@@ -43,14 +47,19 @@ struct LineupCardView: View {
         .modifier(CardModifier())
         .listRowBackground(Color.clear)
     }
-
+    
+    // MARK: Private methods
+    
+    // Returns the formated lineup rank to display.
     private func lineupRank(rank: Int) -> String {
         return "\(rank)TH"
     }
     
+    // Returns the lineup score to display.
     private func lineupScore(score: Double) -> String {
         return "\(Int(lineup.score))pts"
     }
+
 }
 
 struct LineupCardView_Previews: PreviewProvider {
